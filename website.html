@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jisue Kang's Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        #profile-img {
+            width: 300px;
+            transition: width 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <div class="container mx-auto p-6">
+        <div class="flex flex-col md:flex-row items-center mb-8">
+            <div class="relative w-full md:w-auto h-auto mb-6 md:mb-0 md:mr-6">
+                <img id="profile-img" src="C:/Users/jisue/연세대/2학년2학기/인연개/website_img.jpg" class="rounded-lg" alt="Profile Picture">
+            </div>
+            <div class="md:ml-6 flex-1">
+                <h1 class="text-4xl font-extrabold">Jisue Kang</h1>
+                <p class="mt-2 text-lg">
+                    I am a developer with an <strong>insatiable passion for learning</strong>. I prioritize deep theoretical approaches through continuous learning and thoughtful consideration, solving problems by <strong>combining research and innovative ideas</strong>.
+                </p>
+                <p class="mt-2 text-lg">
+                    I specialize in <strong>NLP</strong>(Natural Language Processing), having worked on various projects including <strong>chatbots</strong> and <strong>graph RAG</strong> systems. I’ve explored multiple approaches to performance improvement.
+                </p>
+                <div class="flex mt-4">
+                    <a href="mailto:jisue0224@yonsei.ac.kr" class="mx-2 text-gray-500 hover:text-gray-900">📧</a>
+                    <a href="https://github.com/jisue0224" class="mx-2 text-gray-500 hover:text-gray-900">🔗</a>
+                    <a href="https://disquiet.io/@jisue0224" class="mx-2 text-gray-500 hover:text-gray-900">💼</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 border-b pb-2">Education</h2>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md mb-6 transform transition hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
+                <h3 class="text-xl font-semibold mb-2">Yonsei University, Seoul</h3>
+                <p class="text-sm text-gray-600 italic mb-3">May 2023 - Present</p>
+                <hr class="border-t border-gray-300 my-3"/>
+                <p class="font-medium">
+                    <strong>B.S. in Artificial Intelligence</strong>
+                </p>
+                <p class="text-gray-700 font-semibold mt-2">
+                    GPA: <strong>4.06/4.30</strong>
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 border-b pb-2">Research Interests</h2>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg mb-6 transform transition hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2 cursor-pointer"
+                onclick="window.location.href='https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/'">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-2/3 pr-4">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Natural Language Processing</h3>
+                        <hr class="border-t border-gray-300 mb-4"/>
+                        <p class="mb-2 font-medium">
+                            Investigating domain-specific fine-tuning techniques and implementing Retrieval-Augmented Generation (RAG) methods to enhance information retrieval.
+                        </p>
+                        <p class="mb-2 font-medium">
+                            Especially interested in utilizing graphs to maintain memory of chat history.
+                        </p>
+                        <p class="text-blue-500 italic mt-3">Click to read more</p>
+                    </div>
+                    <div class="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
+                        <img alt="GraphRAG Preview" src="C:/Users/jisue/연세대/2학년2학기/인연개/graphrag.png"
+                            class="rounded-lg shadow-md h-full w-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg mb-6 transform transition hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">Multimodal AI</h3>
+                <hr class="border-t border-gray-300 mb-4"/>
+                <p class="mb-2 font-medium">
+                    Focusing on integrating on-device multimodal models for seamless AI integration into daily life.
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 border-b pb-2">Projects</h2>
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md mb-6 transform transition hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-2/3 pr-4">
+                        <h3 class="text-xl font-semibold mb-2">aws</h3>
+                        <p class="text-sm text-gray-600 italic mb-3">September 2024 - Present</p>
+                        <hr class="border-t border-gray-300 my-3"/>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>As the winner of the AWS Summer Camp, I was granted the opportunity to use AWS Cloud services for free during the second half of 2024, allowing me to gain operational experience.</li>
+                            <li>Currently implementing a novel-writing chatbot that maintains narrative consistency using Graph RAG.</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
+                        <img alt="Neo Preview" src="C:/Users/jisue/연세대/2학년2학기/인연개/neo.png"
+                            class="rounded-lg shadow-md h-full w-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md mb-6 transform transition hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-2/3 pr-4">
+                        <h3 class="text-xl font-semibold mb-2">aws summercamp</h3>
+                        <p class="text-sm text-gray-600 italic mb-3">July 2024 - August 2024</p>
+                        <hr class="border-t border-gray-300 my-3"/>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>Final winner, gaining hands-on experience by operating AWS cloud services.</li>
+                            <li>Developed 'TodokTodok', a chatbot aimed at reducing private education costs for middle school students.</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
+                        <img alt="TodokTodok Preview" src="C:/Users/jisue/연세대/2학년2학기/인연개/todoktodok.png"
+                            class="rounded-lg shadow-md h-full w-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg mb-6 transform transition hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
+                <h3 class="text-xl font-semibold mb-2">WorkStation 24-2</h3>
+                    <p class="text-sm text-gray-600 italic mb-3">September 2024 - Present</p>
+                    <hr class="border-t border-gray-300 my-3"/>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Planning to develop a Korean language correction chatbot for North Korean defectors.
+                    </ul>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md mb-6 transform transition hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-2/3 pr-4">
+                        <h3 class="text-xl font-semibold mb-2">WorkStation 24-1</h3>
+                        <p class="text-sm text-gray-600 italic mb-3">April 2024 - July 2024</p>
+                        <hr class="border-t border-gray-300 my-3"/>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>Developed 'tggle,' a newsletter service that selects trending topics based on GPT-crawled information and provides highly readable news summaries.</li>
+                            <li>Received an A grade and a total prize of 1 million KRW.</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
+                        <img alt="Tggle Preview" src="C:/Users/jisue/연세대/2학년2학기/인연개/tggle.png"
+                            class="rounded-lg shadow-md h-full w-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md mb-6 transform transition hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-2/3 pr-4">
+                        <h3 class="text-xl font-semibold mb-2">Yonsei-Nexon RC Creative Platform</h3>
+                        <p class="text-sm text-gray-600 italic mb-3">May 2023 – November 2023</p>
+                        <hr class="border-t border-gray-300 my-3"/>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>Developed a service that translates Braille into text when a photo is taken after recognizing the issue of incorrect Braille guidance.</li>
+                            <li>Took on the role of translating Braille ASCII codes into Korean.</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/3 mt-4 md:mt-0 relative h-48 w-full">
+                        <img alt="creative platform Preview" src="C:/Users/jisue/연세대/2학년2학기/인연개/injianinji.png"
+                            class="rounded-lg shadow-md h-full w-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 border-b pb-2">Clubs</h2>
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md mb-6 transform transition hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
+                <h3 class="text-xl font-semibold mb-2">CreAI+IT, 2nd semester</h3>
+                <p class="text-sm text-gray-600 italic mb-3">September 2024 – Present</p>
+                <hr class="border-t border-gray-300 my-3"/>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Also using graph, planning a service that automatically tags and categorizes information from various platforms that users wish to collect, powered by AI.</li>
+                    <li>Planning to participate in a study group to focus on ’Promptmatics,’ a method to enhance the responses of generative AI.</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md mb-6 transform transition hover:scale-105 hover:shadow-xl hover:border-indigo-500 hover:border-2">
+                <h3 class="text-xl font-semibold mb-2">CreAI+IT, 1st semester</h3>
+                <p class="text-sm text-gray-600 italic mb-3">May 2024 – July 2024</p>
+                <hr class="border-t border-gray-300 my-3"/>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Learned how to utilize GPT’s API and craft effective prompts.</li>
+                    <li>Participated in a study group to learn about fine-tuning techniques, RAG, and vector databases.</li>
+                    <li>Formed a team to plan and launch a personalized news summarization service called "tggle," winning an encouragement award at Yonsei University’s Startup Competition.</li>
+                    <li>Developed a course recommendation service for the programming education site "DataCamp" as a side project.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 border-b pb-2">Skills</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold mb-3">Programming Languages</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-md transition hover:scale-105 hover:shadow-lg">
+                            Python
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-md transition hover:scale-105 hover:shadow-lg">
+                            C++
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-3">Technologies</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-md transition hover:scale-105 hover:shadow-lg">
+                            AWS Cloud Service
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-md transition hover:scale-105 hover:shadow-lg">
+                            PyTorch
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
